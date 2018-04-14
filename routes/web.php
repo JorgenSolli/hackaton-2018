@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::prefix('api')->group(function() {
+    Route::get('search-flight', 'FlightData@searchFlight');
 });

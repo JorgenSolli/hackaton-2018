@@ -1,14 +1,52 @@
+// Semantic UI
+@import "semantic";
+@import "semantic-calendar";
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+#map {
+    min-height: 100vh;
+}
 
-// Variables
-@import "variables";
+.inputs, #results {
+    &.with-overlay {
+        position: absolute;
+    }
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+    width: calc(100% - 10px);
+    z-index: 1;
+    padding: 15px 0;
+    margin: 5px;
+}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.chilli-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+.side-icon {
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* Helpers */
+.w-100 {
+    width: 100% !important;
+}
+
+/* Semantic overrides */
+.ui.grid + .grid {
+    margin-top: 0;
+}
+
+.ui.grid > .column:not(.row) {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.ui.grid {
+    margin-left: 0;
+    margin-right: 0;
 }
