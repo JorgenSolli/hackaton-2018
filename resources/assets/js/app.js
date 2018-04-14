@@ -63,10 +63,10 @@ $(document).ready(function() {
     FlightApp.init();
 
     var $destionation_data = $("#destinations-data");
-    var $where_to_data = $("#where-to");
+    var $where_to_data = $("#where-to-data");
 
     $("#where-to").on('click', function() {
-        $where_to_data.slideUp(function() {
+        $where_to_data.animate({top: '-70px'}, 200, function() {
             $destionation_data.slideDown();
         });
     });
@@ -96,7 +96,6 @@ $(document).ready(function() {
     $(document).on('click', '[data-icao="RJAA"]', function() {
         FlightApp.map.createPolylines(flightplan)
     });
-
 
     $("#get-results").on('click', function() {
         $("#destinations-data").slideUp(function() {
