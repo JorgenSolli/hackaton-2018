@@ -1,3 +1,5 @@
+# 1st place hackaton@bø 2018
+
 ## Spicy Trips
 Flights do not need only to about getting from point A to point B as soon as possible. I should also be about utilising the opportunity to experience something new along the way.
 
