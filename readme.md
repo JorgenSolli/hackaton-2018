@@ -16,3 +16,7 @@ jQuery JS Framework
 jQuery UI JS Framework
 SASS CSS extension language (https://sass-lang.com/)
 Semantic UI CSS Framework (https://semantic-ui.com/)
+
+
+> The app is currently running on a sleeping free dyno on Heroku. It will take a few seconds for it to wake up when trying to access the page.
+> The API implementation is now partially deprecated, and the app is therefore not behaving as it used to.
